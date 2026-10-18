@@ -75,3 +75,43 @@ footer {
         padding: 12px;
     }
 }
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 20px;
+    border: 1px solid #ccd6e0;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.skill-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card:focus-within {
+    outline: 2px solid #183153;
+}
+
+.details-button {
+    padding: 10px 14px;
+    background-color: #183153;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-button:hover {
+    background-color: #2b527e;
+}
+
+@media (max-width: 600px) {
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+}
